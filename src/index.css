@@ -1,0 +1,55 @@
+
+@import "tailwindcss";
+
+body{
+    background-color: #f1faee;
+}
+
+html, body {
+  height: 100%;
+  overflow-y: auto; /* ensures body handles scroll */
+}
+
+/* For Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #e63946 #f1faee;
+}
+
+/* For Chrome, Edge, Safari */
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1faee;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e63946;
+  border-radius: 16px;
+  border: 2px solid #f1faee;
+}
+
+
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1faee;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #e63946;
+    border-radius: 4px;
+  }
+
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #e63946 #f1faee;
+  }
+
+  
+}
