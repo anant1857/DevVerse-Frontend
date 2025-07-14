@@ -43,7 +43,7 @@ export default function Contact() {
     onSubmit: async (values, { resetForm }) => {
       try {
         setIsSubmitting(true)
-        const response = await fetch("http://localhost:5000/api/contact", {
+        const response = await fetch("https://devverse-backend-r5ym.onrender.com/api/contact", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

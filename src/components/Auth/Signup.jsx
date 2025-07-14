@@ -81,7 +81,7 @@ const Signup = () => {
   
   const handleSubmit = async (values, { setSubmitting, setErrors }) => {
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/signup', values);
+      const res = await axios.post('https://devverse-backend-r5ym.onrender.com/api/auth/signup', values);
       login(res.data.token);
       navigate('/');
     } catch (err) {

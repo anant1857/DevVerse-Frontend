@@ -22,7 +22,7 @@ const Login = () => {
   
   const handleSubmit = async (values, { setSubmitting, setErrors }) => {
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', values);
+      const res = await axios.post('https://devverse-backend-r5ym.onrender.com/api/auth/login', values);
       login(res.data.token);
       navigate('/');
     } catch (err) {
@@ -35,7 +35,7 @@ const Login = () => {
   const handleForgotPassword = async (values, { setSubmitting, setErrors }) => {
     try {
       if (resetStage === 'request') {
-        const res = await axios.post('http://localhost:5000/api/auth/forgot-password', {
+        const res = await axios.post('https://devverse-backend-r5ym.onrender.com/api/auth/forgot-password', {
           email: values.email
         });
         setResetEmail(values.email);
@@ -43,7 +43,7 @@ const Login = () => {
         setResetStage('verify');
         setResetMessage('Please check your email for reset instructions');
       } else if (resetStage === 'verify') {
-        await axios.post('http://localhost:5000/api/auth/reset-password', {
+        await axios.post('https://devverse-backend-r5ym.onrender.com/api/auth/reset-password', {
           token: values.token || resetToken,
           newPassword: values.newPassword
         });
