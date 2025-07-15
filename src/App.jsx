@@ -14,6 +14,9 @@ import ScrollToTop from './components/ScrollToTop';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import BeforeLoginPage from './components/BeforeLoginPage/BeforeLoginPage';
+import SnippetGenerator from './components/SnippetGenerator/SnippetGenerator';
+import RegexTester from './components/RegexTester/RegexTester';
+import SeoChecker from './components/SeoChecker/SeoChecker';
 
 function App() {
   const { isAuthenticated } = useAuth();
@@ -35,6 +38,9 @@ function App() {
             <Route path="/review" element={<Main />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/snippet-generator" element={<SnippetGenerator />} />
+            <Route path="/seo-checker" element={<SeoChecker />} />
+             <Route path="/regex-tester" element={<RegexTester />} />
             <Route path="*" element={<Navigate to="/" />} />
           </>
         ) : (

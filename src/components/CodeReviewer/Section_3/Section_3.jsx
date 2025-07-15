@@ -6,7 +6,7 @@ const features = [
   {
     icon: <ShieldCheck className="w-8 h-8 text-[#f08553]" />,
     title: "Security First",
-    description: "CodeGuardian performs deep scans to detect vulnerabilities before they reach production.",
+    description: "DevVerse performs deep scans to detect vulnerabilities before they reach production.",
   },
   {
     icon: <Sparkles className="w-8 h-8 text-[#f08553]" />,
@@ -31,9 +31,9 @@ const Section_3 = () => {
   <section className="bg-gradient-to-b from-[#f08553] to-[#232323] text-white py-16 px-4">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-sm font-semibold text-[#232323] mb-2">FEATURES</h2>
-        <h3 className="text-3xl md:text-4xl font-bold mb-4">Why Developers Love CodeGuardian</h3>
+        <h3 className="text-3xl md:text-4xl font-bold mb-4">Why Developers Love DevVerse</h3>
         <p className="text-gray-200 mb-12 max-w-2xl mx-auto">
-          From intelligent analysis to seamless automation, CodeGuardian is built to accelerate your development workflow and secure your codebase — every step of the way.
+          From intelligent analysis to seamless automation, DevVerse is built to accelerate your development workflow and secure your codebase — every step of the way.
         </p>
 
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">

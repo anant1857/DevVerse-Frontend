@@ -23,8 +23,9 @@ const Navbar = () => {
   const mainNavLinks = [
     { to: '/', label: 'Home' },
     { to: '/review', label: 'Code Reviewer' },
-    { to: '/plagiarism-checker', label: 'Plagiarism Checker' },
-    { to: '/schema-checker', label: 'JSON Schema Checker' },
+    { to: '/snippet-generator', label: 'Snippet Generator' },
+    { to: '/regex-tester', label: 'Regex Tester' },
+    { to: '/seo-checker', label: 'SEO Checker' },
     { to: '/about', label: 'About' },
     { to: '/contact', label: 'Contact' },
   ];
