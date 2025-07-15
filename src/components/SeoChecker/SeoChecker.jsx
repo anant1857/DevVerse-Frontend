@@ -13,7 +13,7 @@ export default function SeoChecker() {
     setError('');
     setReport(null);
     try {
-      const res = await fetch('http://localhost:5000/api/seo/check', {
+      const res = await fetch('https://devverse-backend-r5ym.onrender.com/api/seo/check', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url }),

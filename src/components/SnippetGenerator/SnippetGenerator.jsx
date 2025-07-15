@@ -13,7 +13,7 @@ const SnippetGenerator = () => {
     setLoading(true);
     setCode('');
     try {
-      const res = await fetch('http://localhost:5000/api/snippet', {
+      const res = await fetch('https://devverse-backend-r5ym.onrender.com/api/snippet', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
